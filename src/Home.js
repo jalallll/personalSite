@@ -1,30 +1,62 @@
 import React, { Component } from "react";
-import Navbar from "./Components/Navbar/Navbar.js";
+import NavBar from "./Components/Navbar/Navbar.js";
 import Hero from "./Components/Hero/Hero.js";
-import Footer from "./Components/Footer/Footer.js";
-import Skills from "./Components/Skills/Skills.js";
 import Projects from "./Components/Projects/Projects.js";
+import hello from "./assets/hello.png";
 
-import Particle from "./Particle.js";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
     <div>
-      <div class="flex flex-col wrapper items-center bg-black w-full">
-        <Particle />
-        <header class="text-white bg-black-400  px-3 py-4 flex justify-center rounded-b-3xl w-full">
-          {" "}
-          <Navbar />
-        </header>
-        <main class=" bg-black w-full">
-          <div class="flex flex-col justify-center w-full">
-            <Hero />
-          </div>
-        </main>
-      </div>
-      <footer class="text-white px-3 py-3 bg-black-400  flex rounded-t-3xl w-full">
-        <Footer />
-      </footer>
+      <NavBar />
+      <Container className="wrapper ">
+        <Row className="pt-5 hero">
+          <Col sm={true} className="text-center">
+            <img src={hello}></img>
+          </Col>
+          <Col sm={true} className="pt-5 mt-5">
+            <h2>Hello, I'm Jalal.</h2>
+            <h2>I'm a Full Stack Software Developer</h2>
+            <button class="font-semibold bg-green-600 text-black-900 pt-2 pb-2 pr-3 pl-3 rounded-full hover:bg-green-400 ring-2 ">
+              Github
+            </button>
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              offset={0}
+              duration={500}
+            >
+              <button class="font-semibold bg-green-600 text-black-900 pt-2 pb-2 pr-3 pl-3 rounded-full hover:bg-green-400 ring-2 ">
+                go
+              </button>
+            </Link>
+          </Col>
+        </Row>
+      </Container>
+      <Container className="" id="projects">
+        <Projects />
+        <Projects />
+
+        <Projects />
+
+        <Projects />
+
+        <Projects />
+
+        <Projects />
+
+        <Projects />
+
+        <Projects />
+
+        <Projects />
+      </Container>
     </div>
   );
 };

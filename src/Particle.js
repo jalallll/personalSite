@@ -52,10 +52,10 @@ class Particle extends Component {
                 distance: 400,
                 duration: 2,
                 opacity: 0.8,
-                size: 40,
+                size: 20,
               },
               push: {
-                quantity: 78,
+                quantity: 1,
               },
               repulse: {
                 distance: 200,
@@ -65,10 +65,10 @@ class Particle extends Component {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#91000c",
             },
             links: {
-              color: "#ffffff",
+              color: "#00ff41",
               distance: 150,
               enable: true,
               opacity: 0.5,
