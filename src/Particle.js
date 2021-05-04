@@ -23,6 +23,7 @@ class Particle extends Component {
   render() {
     return (
       <Particles
+        className="back"
         id="tsparticles"
         init={this.particlesInit}
         loaded={this.particlesLoaded}
