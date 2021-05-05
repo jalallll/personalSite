@@ -3,6 +3,7 @@ import NavBar from "./Components/Navbar/Navbar.js";
 import Hero from "./Components/Hero/Hero.js";
 import About from "./Components/About/About.js";
 import hello from "./assets/hello.png";
+import Skills from "./Components/Skills/Skills.js";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -15,31 +16,59 @@ const Home = () => {
     <div className="home ">
       <div className="hero-section">
         <NavBar />
-        <Container className="wrapper ">
-          <Row className="pt-5 hero">
-            <Col
-              sm={true}
-              className="pt-5 mt-5 d-flex flex-col align-items-center text-center"
+        <div className="wrapper d-flex flex-col hero">
+          <Hero />
+
+          <div className="d-flex justify-content-center btn">
+            <Link
+              activeClass="active"
+              to="About"
+              spy={true}
+              offset={0}
+              duration={500}
             >
-              <h2>Hello, my name is Jalal.</h2>
-              <h2>I develop software.</h2>
-              <Link
-                activeClass="active"
-                to="Skills"
-                spy={true}
-                offset={0}
-                duration={500}
-              >
-                <button class=" mt-10 font-semibold bg-green-600 text-black-900 pt-2 pb-2 pr-3 pl-3 rounded-full hover:bg-green-400 ring-2">
-                  Learn More
-                </button>
-              </Link>
-            </Col>
-          </Row>
-        </Container>
-        <Container className="" id="Skills">
+              <Button variant="outlined" color="primary" className="">
+                Learn More
+              </Button>
+            </Link>
+          </div>
+        </div>
+
+        <div className="wrapper d-flex flex-col hero" id="About">
           <About />
-        </Container>
+
+          <div className="d-flex justify-content-center btn">
+            <Link
+              activeClass="active"
+              to="Skills"
+              spy={true}
+              offset={0}
+              duration={500}
+            >
+              <Button variant="outlined" color="primary" className="">
+                My Expertise
+              </Button>
+            </Link>
+          </div>
+        </div>
+
+        <div className="wrapper d-flex flex-col hero" id="Skills">
+          <Skills />
+
+          <div className="d-flex justify-content-center btn">
+            <Link
+              activeClass="active"
+              to="Skills"
+              spy={true}
+              offset={0}
+              duration={500}
+            >
+              <Button variant="outlined" color="primary" className="">
+                My Expertise
+              </Button>
+            </Link>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

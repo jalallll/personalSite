@@ -17,10 +17,6 @@ const About = () => {
             can.
           </h4>
         </div>
-
-        <Button variant="outlined" color="primary" className="btn">
-          My Expertise
-        </Button>
       </Row>
     </Container>
   );
