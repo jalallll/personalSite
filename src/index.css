@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --grad: linear-gradient(45deg, #000000, #010a0f, #070011, #050815);
+  --grad: linear-gradient(85deg, #000000, #01050e, #000000, #010308);
+  --txt: linear-gradient(90deg, #bbbbbbc4, #768fac, #b6dfa4, #181d2a);
 }
 
 body {
@@ -42,9 +43,10 @@ img {
   transform: translateX(-50%) translateY(-50%);
 }
 .home {
-  background-image: var(--grad);
+  background-image: var(--txt);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 5s ease infinite;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 @keyframes gradient {
@@ -69,4 +71,8 @@ img {
   100% {
     opacity: 1;
   }
+}
+
+.navbar {
+  background-color: black;
 }

@@ -1,10 +1,14 @@
 import React from "react";
-
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 const Skills = () => {
   return (
-    <div class="bg-black w-3/5 p-20 items-center rounded-3xl opacity-50">
-      <div>hi</div>
-    </div>
+    <Container>
+      <Row>
+        <Col>Hi</Col>
+      </Row>
+    </Container>
   );
 };
 
