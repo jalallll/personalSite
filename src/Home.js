@@ -9,7 +9,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-scroll";
-
 const Home = () => {
   return (
     <div className="home ">
@@ -17,12 +16,8 @@ const Home = () => {
         <NavBar />
         <Container className="wrapper ">
           <Row className="pt-5 hero">
-            <Col sm={true} className="text-center">
-              <img src={hello}></img>
-            </Col>
             <Col sm={true} className="pt-5 mt-5">
-              <h2>Hello, my name is</h2>
-              <h2>Jalal Qureshi.</h2>
+              <h2>Hello, my name is Jalal</h2>
               <h2>I'm a Full Stack Software Developer.</h2>
               <Link
                 activeClass="active"

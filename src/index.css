@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --grad: linear-gradient(85deg, #000000, #01050e, #000000, #010308);
-  --txt: linear-gradient(90deg, #bbbbbbc4, #768fac, #b6dfa4, #181d2a);
+  --darkish: linear-gradient(20deg, #000000, #01050e, #000000, #010308);
+  --blueish: linear-gradient(20deg, #bbbbbbc4, #768fac, #67b4d8, #181d2a);
 }
 
 body {
@@ -43,10 +43,11 @@ img {
   transform: translateX(-50%) translateY(-50%);
 }
 .home {
-  background-image: var(--txt);
+  background-image: var(--darkish);
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(255, 255, 255, 0.794);
 }
 
 @keyframes gradient {
