@@ -16,8 +16,11 @@ const Home = () => {
         <NavBar />
         <Container className="wrapper ">
           <Row className="pt-5 hero">
-            <Col sm={true} className="pt-5 mt-5">
-              <h2>Hello, my name is Jalal</h2>
+            <Col
+              sm={true}
+              className="pt-5 mt-5 d-flex flex-col align-items-center"
+            >
+              <h2>Hello, my name is Jalal.</h2>
               <h2>I'm a Full Stack Software Developer.</h2>
               <Link
                 activeClass="active"
@@ -26,14 +29,16 @@ const Home = () => {
                 offset={0}
                 duration={500}
               >
-                <button class="mt-3 font-semibold bg-green-600 text-black-900 pt-2 pb-2 pr-3 pl-3 rounded-full hover:bg-green-400 ring-2">
+                <button class=" mt-3 font-semibold bg-green-600 text-black-900 pt-2 pb-2 pr-3 pl-3 rounded-full hover:bg-green-400 ring-2">
                   Learn More
                 </button>
               </Link>
             </Col>
           </Row>
         </Container>
-        <Container className="" id="Skills"></Container>
+        <Container className="" id="Skills">
+          <Skills />
+        </Container>
       </div>
     </div>
   );
