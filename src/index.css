@@ -120,3 +120,8 @@ img {
 svg:hover {
   fill: blue;
 }
+
+.bio {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}

@@ -30,7 +30,7 @@ const Home = () => {
                 offset={0}
                 duration={500}
               >
-                <button class=" mt-3 font-semibold bg-green-600 text-black-900 pt-2 pb-2 pr-3 pl-3 rounded-full hover:bg-green-400 ring-2">
+                <button class=" mt-10 font-semibold bg-green-600 text-black-900 pt-2 pb-2 pr-3 pl-3 rounded-full hover:bg-green-400 ring-2">
                   Learn More
                 </button>
               </Link>
