@@ -77,3 +77,46 @@ img {
 .navbar {
   background-color: black;
 }
+
+.footer {
+  margin-top: 300px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-color: black;
+  width: 100%;
+}
+
+#underline {
+  background-color: aqua;
+  border-radius: 5px;
+}
+.btn {
+  margin-top: 300px;
+}
+
+.github-icon {
+  margin: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+
+  background-color: white;
+  border-radius: 50%;
+}
+.linkedin-icon {
+  margin: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+.email-icon {
+  margin: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+svg:hover {
+  fill: blue;
+}
