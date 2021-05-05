@@ -25,7 +25,8 @@ const Home = () => {
               to="About"
               spy={true}
               offset={0}
-              duration={500}
+              duration={1000}
+              smooth={true}
             >
               <Button variant="outlined" color="primary" className="">
                 Learn More
@@ -43,7 +44,8 @@ const Home = () => {
               to="Skills"
               spy={true}
               offset={0}
-              duration={500}
+              duration={1000}
+              smooth={true}
             >
               <Button variant="outlined" color="primary" className="">
                 My Expertise
@@ -61,7 +63,8 @@ const Home = () => {
               to="Skills"
               spy={true}
               offset={0}
-              duration={500}
+              dduration={1000}
+              smooth={true}
             >
               <Button variant="outlined" color="primary" className="">
                 My Expertise
