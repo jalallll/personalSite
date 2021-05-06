@@ -3,8 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --darkish: linear-gradient(20deg, #000000, #01050e, #000000, #010308);
-  --blueish: linear-gradient(20deg, #bbbbbbc4, #768fac, #67b4d8, #181d2a);
+  --darkish: linear-gradient(
+    20deg,
+    #000000,
+    #01050e,
+    #03121a,
+    #000000,
+    #010308
+  );
+  --blueish: linear-gradient(40deg, #bbbbbbc4, #768fac, #67b4d8, #fff3b1);
 }
 
 body {
@@ -115,7 +122,12 @@ img {
   background-color: white;
   border-radius: 50%;
 }
-
+.up-icon {
+  margin: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
 svg:hover {
   fill: blue;
 }
@@ -123,4 +135,9 @@ svg:hover {
 .bio {
   margin-top: 20px;
   margin-bottom: 40px;
+}
+.image-container {
+  background-image: var(--blueish);
+  background-size: 100% 100%;
+  animation: gradient 2s ease infinite;
 }

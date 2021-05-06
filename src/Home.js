@@ -13,7 +13,7 @@ import { Link } from "react-scroll";
 import Footer from "./Components/Footer/Footer.js";
 const Home = () => {
   return (
-    <div className="home ">
+    <div className="home">
       <div className="hero-section">
         <NavBar />
         <div className="wrapper d-flex flex-col hero">
@@ -48,7 +48,7 @@ const Home = () => {
               smooth={true}
             >
               <Button variant="outlined" color="primary" className="">
-                My Expertise
+                My Skills
               </Button>
             </Link>
           </div>
@@ -60,14 +60,27 @@ const Home = () => {
           <div className="d-flex justify-content-center btn">
             <Link
               activeClass="active"
-              to="Skills"
+              to="footer"
               spy={true}
               offset={0}
               dduration={1000}
               smooth={true}
             >
               <Button variant="outlined" color="primary" className="">
-                My Expertise
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
               </Button>
             </Link>
           </div>
