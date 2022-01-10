@@ -8,8 +8,22 @@ import cImg from "../../assets/c.svg";
 import pyImg from "../../assets/python.svg";
 import javaImg from "../../assets/java.svg";
 import javascriptImg from "../../assets/javascript.svg";
+import WinboxReact from 'winbox-react'
+import 'winbox-react/dist/index.css'
+
+const imageClick = () =>{
+  alert("click")
+  return <WinboxReact>
+  <h4>
+    Lorem ipsum dolor sit amet
+  </h4>
+</WinboxReact>
+}
 
 const Skills = () => {
+
+  
+
   return (
     <div className="">
       <Row>
@@ -18,19 +32,26 @@ const Skills = () => {
         </Col>
       </Row>
       <Row className="">
+
         <Col className="d-flex flex-wrap ">
-          <div className="bg-white shadow-xl rounded-full justify-center m-3 w-40 h-40 p-4 items-center image-container">
-            <img className="img" src={reactImg} />
-          </div>
-          <div className="bg-white shadow-xl rounded-full justify-center m-3 w-40 h-40 p-4 items-center image-container">
-            <img className="img" src={cImg} />
-          </div>
-          <div className="bg-white shadow-xl rounded-full justify-center m-3 w-40 h-40 p-4 items-center image-container">
-            <img className="img" src={pyImg} />
-          </div>
-          <div className="bg-white shadow-xl rounded-full justify-center m-3 w-40 h-40 p-4 items-center image-container">
-            <img className="img" src={javascriptImg} />
-          </div>
+          
+            <div  className="bg-white shadow-xl rounded-full justify-center m-3 w-40 h-40 p-4 items-center image-container" >
+              <img onClick={imageClick} className="img" src={reactImg} />
+              
+            </div>
+
+            
+            <div className="bg-white shadow-xl rounded-full justify-center m-3 w-40 h-40 p-4 items-center image-container">
+              <img onClick={imageClick} className="img" src={cImg} />
+            </div>
+            <div className="bg-white shadow-xl rounded-full justify-center m-3 w-40 h-40 p-4 items-center image-container">
+              <img onClick={imageClick} className="img" src={pyImg} />
+            </div>
+            <div className="bg-white shadow-xl rounded-full justify-center m-3 w-40 h-40 p-4 items-center image-container">
+              <img onClick={imageClick} className="img" src={javascriptImg} />
+            </div>
+          
+          
         </Col>
       </Row>
     </div>

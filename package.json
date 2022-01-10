@@ -9,17 +9,18 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^5.1.3",
     "react": "^17.0.2",
-    "react-bootstrap": "^1.5.2",
+    "react-bootstrap": "^1.6.4",
     "react-dom": "^17.0.2",
     "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
     "react-tsparticles": "^1.26.4",
     "typemejs": "^0.0.2",
-    "web-vitals": "^1.1.1"
+    "web-vitals": "^1.1.1",
+    "winbox-react": "^1.0.4"
   },
   "scripts": {
     "start": "craco start",
