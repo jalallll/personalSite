@@ -18,7 +18,7 @@ const NavBar = () => {
         <Nav>
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/contact">Contact</Nav.Link>
-          <Nav.Link href="/contact">Resume</Nav.Link>
+          <Nav.Link href="/resume">Resume</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
