@@ -8,11 +8,26 @@ import {
 	CardActions,
 	Stack,
 	Divider,
+	Container,
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import React from "react";
 
 const projects = [
+	{
+		title: "Deep Learning CNN",
+		tools: "Python, PyTorch, SKLearn, Matplotlib",
+		description:
+			"Used transfer learning to train and test neural network model on a dataset of 60,000 images. Performed feature extraction on fc6 and fc7 convolutional layers to train support vector machines, and achieved an accuracy score of 80% on 10,000 test images.",
+		image: require("../assets/pytorch.png"),
+	},
+	{
+		title: "Distributed Data Processing",
+		tools: "Python, Apache Hadoop HDFS",
+		description:
+			"Utilized distributed computing through Hadoop Distributed File System (HDFS) to determine the importance of each word in a corpus, by calculation of the TF-IDF metric.			",
+		image: require("../assets/hadoop.png"),
+	},
 	{
 		title: "Chat Application",
 		tools: "Python Sockets",
@@ -21,24 +36,31 @@ const projects = [
 		image: require("../assets/socket.jpg"),
 	},
 	{
-		title: "RDT 3.0 Chat App",
+		title: "Reliable Data Transport Implementation",
 		tools: "Python Sockets",
 		description:
-			"A server and client chat application made in python using UDP sockets.",
+			"Used UDP sockets to implement Reliable Data Transfer (RDT) 3.0 protocol to develop a client-server application to allow multi-client messaging.",
 		image: require("../assets/socket.jpg"),
 	},
 	{
-		title: "RDT 3.0 Chat App",
-		tools: "Python Sockets",
+		title: "Bus Trip Booking System",
+		tools: "PHP, MySQL, HTML, Bootstrap",
 		description:
-			"A server and client chat application made in python using UDP sockets.",
-		image: require("../assets/socket.jpg"),
+			"Developed a CRUD based web application using SQL and PHP that allows users to view available bus trips, view passengers on a specific bus trip, and book/cancel a bus trip. Utilized SQL transactions to ensure logical order of data modifications.",
+		image: require("../assets/sql.jpg"),
+	},
+	{
+		title: "Social Network",
+		tools: "Python, Django, SQLite, Pillow",
+		description:
+			"Developed a Facebook clone that allows users to login to their account and make a post on their profile.",
+		image: require("../assets/social_media.jpg"),
 	},
 ];
 
 const CustomCard = (props) => {
 	return (
-		<Card sx={{ maxWidth: 300 }} flex={1}>
+		<Card sx={{ minWidth: 300, maxWidth: 300, margin: 4 }}>
 			<CardHeader title={props.project.title} subheader={props.tools} />
 			<CardMedia
 				component="img"
@@ -60,28 +82,34 @@ const CustomCard = (props) => {
 
 const Projects = () => {
 	return (
-		<Stack
-			direction="column"
-			spacing={5}
-			alignItems="center"
-			divider={<Divider orientation="horizontal" flexItem />}
-			sx={{ paddingTop: 10 }}
-		>
-			<Typography variant="h3">Projects</Typography>
-			<Box
-				sx={{
-					marginY: 10,
-					display: "flex",
-
-					gap: 5,
-					flexDirection: { xs: "column", md: "row" },
-				}}
+		<Container>
+			<Stack
+				direction="column"
+				spacing={5}
+				alignItems="center"
+				divider={<Divider orientation="horizontal" flexItem />}
+				sx={{ paddingTop: 10, justifyContent: "center" }}
 			>
-				{projects.map((project) => (
-					<CustomCard project={project} />
-				))}
-			</Box>
-		</Stack>
+				<Typography variant="h3">Projects</Typography>
+				<Container>
+					<Stack
+						direction="row"
+						spacing={0}
+						alignItems="start"
+						divider={<Divider orientation="horizontal" flexItem />}
+						sx={{
+							display: "flex",
+							flexWrap: "wrap",
+							justifyContent: "center",
+						}}
+					>
+						{projects.map((project) => (
+							<CustomCard project={project} />
+						))}
+					</Stack>
+				</Container>
+			</Stack>
+		</Container>
 	);
 };
 
