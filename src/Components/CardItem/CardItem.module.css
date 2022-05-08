@@ -1,0 +1,17 @@
+.CardItem {
+	background: rgb(57, 136, 255);
+	background: radial-gradient(
+		circle,
+		rgba(57, 136, 255, 1) 0%,
+		rgba(20, 180, 251, 1) 100%
+	);
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	border-radius: 20em;
+	margin: 0.2em;
+}
+.CardItem h1 {
+	font-size: 1em;
+	padding: 0.5em;
+}
