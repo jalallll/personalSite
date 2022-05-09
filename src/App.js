@@ -6,17 +6,23 @@ import Hero from "./Components/Hero";
 import Skills from "./Components/Skills";
 import Card from "./Components/Card/Card";
 import Footer from "./Components/Footer";
-
 function App() {
 	return (
-		<Box>
-			<Stack direction="column" spacing={2} alignItems="center">
+		<Box bgcolor="gray">
+			<div>
 				<NavBar />
-				<Hero />
-				<Skills />
-				<Projects />
+				<Box sx={{ height: "100vh", alignItems: "center", display: "flex" }}>
+					<Hero />
+				</Box>
+				<Box sx={{ height: "100vh", alignItems: "center", display: "flex" }}>
+					<Skills />{" "}
+				</Box>
+				<Box sx={{ height: "100vh", alignItems: "center", display: "flex" }}>
+					<Projects />{" "}
+				</Box>
+
 				<Footer />
-			</Stack>
+			</div>
 		</Box>
 	);
 }
