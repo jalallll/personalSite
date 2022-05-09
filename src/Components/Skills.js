@@ -1,6 +1,6 @@
 import { Divider, Stack, Typography, Box, Container } from "@mui/material";
 import React from "react";
-import Card from "../Card/Card";
+import Card from "./Card/Card";
 const languages = [
 	"Python",
 	"C",
@@ -53,7 +53,7 @@ const Skills = () => {
 				spacing={5}
 				alignItems="center"
 				divider={<Divider orientation="horizontal" flexItem />}
-				sx={{ paddingTop: 10 }}
+				sx={{ paddingTop: 10, display: "flex", flexWrap: "wrap" }}
 			>
 				<Typography variant="h3">Skills</Typography>
 				<Box

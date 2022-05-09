@@ -3,8 +3,9 @@ import React from "react";
 import Projects from "./Components/Projects";
 import NavBar from "./Components/NavBar";
 import Hero from "./Components/Hero";
-import Skills from "./Components/Skills/Skills";
+import Skills from "./Components/Skills";
 import Card from "./Components/Card/Card";
+import Footer from "./Components/Footer";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 				<Hero />
 				<Skills />
 				<Projects />
+				<Footer />
 			</Stack>
 		</Box>
 	);
