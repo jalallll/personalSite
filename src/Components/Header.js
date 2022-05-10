@@ -12,7 +12,7 @@ const Header = () => {
 					development.
 				</p>
 				<div class="self-start flex flex-col space-y-2 lg:space-y-4">
-					<button class="mt-5 lg:text-xl lg:mt-20 w-40">Learn More!!</button>
+					<button class="mt-5 lg:text-xl lg:mt-20 w-40">Learn More</button>
 				</div>
 			</div>
 		</div>

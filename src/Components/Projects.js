@@ -1,17 +1,3 @@
-import {
-	Box,
-	Card,
-	CardHeader,
-	CardContent,
-	CardMedia,
-	Typography,
-	CardActions,
-	Stack,
-	Divider,
-	Container,
-	IconButton,
-} from "@mui/material";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import React from "react";
 
 const projects = [
@@ -65,60 +51,14 @@ const projects = [
 	},
 ];
 
-const CustomCard = (props) => {
-	return (
-		<Card sx={{ minWidth: 300, maxWidth: 300, margin: 4 }}>
-			<CardHeader title={props.project.title} subheader={props.tools} />
-			<CardMedia
-				component="img"
-				height="150"
-				image={props.project.image}
-				alt="Image"
-			/>
-			<CardContent>
-				<Typography variant="body2" color="text.secondary">
-					{props.project.description}
-				</Typography>
-			</CardContent>
-			<CardActions>
-				<IconButton>
-					<GitHubIcon onClick={() => window.open(props.project.link)} />
-				</IconButton>
-			</CardActions>
-		</Card>
-	);
-};
-
 const Projects = () => {
 	return (
-		<Container>
-			<Stack
-				direction="column"
-				spacing={5}
-				alignItems="center"
-				divider={<Divider orientation="horizontal" flexItem />}
-				sx={{ paddingTop: 10, justifyContent: "center" }}
-			>
-				<Typography variant="h3">Projects</Typography>
-				<Container>
-					<Stack
-						direction="row"
-						spacing={0}
-						alignItems="start"
-						divider={<Divider orientation="horizontal" flexItem />}
-						sx={{
-							display: "flex",
-							flexWrap: "wrap",
-							justifyContent: "center",
-						}}
-					>
-						{projects.map((project) => (
-							<CustomCard project={project} />
-						))}
-					</Stack>
-				</Container>
-			</Stack>
-		</Container>
+		<div class="w-screen h-screen flex flex-col items-center justify-center">
+			<h1>Projects</h1>
+			<div>
+				<div class="w-60 h-60 bg-slate-900 rounded-lg"></div>
+			</div>
+		</div>
 	);
 };
 

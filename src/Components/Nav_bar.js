@@ -4,7 +4,7 @@ const pageNames = ["Home", "Skills", "Projects", "Contact", "Resume"];
 
 const Nav_bar = () => {
 	return (
-		<div class="w-screen bg-slate-900 h-20 ">
+		<div class="fixed w-screen bg-slate-900 h-20 ">
 			<div class="w-full h-full px-3 sm:px-4 md:px-10 flex justify-between items-center">
 				<h1 class="sm:text-4xl text-white font-cursive font-semibold">Jalal</h1>
 				<ul class="flex justify-items-end ">

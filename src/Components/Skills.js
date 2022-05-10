@@ -21,7 +21,7 @@ const frameworks = [
 	"React",
 	"Node JS",
 	"Express",
-	"Axis",
+	"Axios",
 	"PyTorch",
 	"TensorFlow",
 	"Sklearn",
@@ -47,38 +47,40 @@ const skill_list = {
 
 const Skills = () => {
 	return (
-		<Container>
-			<Stack
-				direction="column"
-				spacing={5}
-				alignItems="center"
-				divider={<Divider orientation="horizontal" flexItem />}
-				sx={{ paddingTop: 10, display: "flex", flexWrap: "wrap" }}
-			>
-				<Typography variant="h3">Skills</Typography>
-				<Box
-					sx={{
-						marginY: 10,
-						display: "flex",
-
-						gap: 5,
-						flexDirection: { xs: "column", md: "row" },
-					}}
+		<div class="w-screen h-screen">
+			<Container>
+				<Stack
+					direction="column"
+					spacing={0}
+					alignItems="center"
+					divider={<Divider orientation="horizontal" flexItem />}
+					sx={{ paddingTop: 0, display: "flex", flexWrap: "wrap" }}
 				>
-					{Object.keys(skill_list).map((category) => (
-						<Stack
-							direction="column"
-							spacing={2}
-							sx={{ alignItems: "center" }}
-							flex={1}
-						>
-							<Typography variant="h4">{category}</Typography>
-							<Card items={skill_list[category]} />
-						</Stack>
-					))}
-				</Box>
-			</Stack>
-		</Container>
+					<Typography variant="h3">Skills</Typography>
+					<Box
+						sx={{
+							marginY: 0,
+							display: "flex",
+
+							gap: 5,
+							flexDirection: { xs: "column", md: "row" },
+						}}
+					>
+						{Object.keys(skill_list).map((category) => (
+							<Stack
+								direction="column"
+								spacing={2}
+								sx={{ alignItems: "center" }}
+								flex={1}
+							>
+								<Typography variant="h4">{category}</Typography>
+								<Card items={skill_list[category]} />
+							</Stack>
+						))}
+					</Box>
+				</Stack>
+			</Container>
+		</div>
 	);
 };
 

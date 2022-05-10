@@ -13,6 +13,7 @@ function App() {
 			<Nav_bar />
 			<div class="bg-black">
 				<Header />
+				<Projects />
 			</div>
 		</div>
 	);
