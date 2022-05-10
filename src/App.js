@@ -6,13 +6,15 @@ import Skills from "./Components/Skills";
 import Card from "./Components/Card/Card";
 import Footer from "./Components/Footer";
 import Nav_bar from "./Components/Nav_bar";
+import Header from "./Components/Header";
 function App() {
 	return (
-		<Box bgcolor="gray">
-			<div>
-				<Nav_bar />
+		<div>
+			<Nav_bar />
+			<div class="bg-black">
+				<Header />
 			</div>
-		</Box>
+		</div>
 	);
 }
 
