@@ -1,4 +1,5 @@
 module.exports = {
+<<<<<<< HEAD
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: "media", // or 'media' or 'class'
   theme: {
@@ -40,4 +41,15 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+=======
+	content: ["./src/**/*.{js,jsx,ts,tsx}"],
+	theme: {
+		extend: {
+			fontFamily: {
+				cursive: ["Whisper"],
+			},
+		},
+	},
+	plugins: [],
+>>>>>>> 594d9e1e8c8307021472fc0f95e60a16d8b3a8c2
 };

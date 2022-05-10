@@ -1,0 +1,16 @@
+.Container {
+	display: flex;
+	flex-wrap: wrap;
+	background: rgb(1, 24, 59);
+	background: radial-gradient(
+		circle,
+		rgba(1, 24, 59, 1) 0%,
+		rgba(1, 16, 40, 1) 100%
+	);
+	padding: 1em;
+	margin: 1em;
+	border-radius: 1em;
+	align-items: start;
+	justify-content: start;
+	flex-wrap: wrap;
+}

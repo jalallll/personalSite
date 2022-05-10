@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 :root {
   --darkish: linear-gradient(
     20deg,
@@ -140,4 +141,20 @@ svg:hover {
   background-image: var(--blueish);
   background-size: 100% 100%;
   animation: gradient 2s ease infinite;
+=======
+@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
+
+@layer base {
+	li {
+		@apply p-0;
+	}
+	* {
+		@apply text-white;
+	}
+
+	button {
+		@apply text-white border bg-black border-white
+    hover:bg-transparent hover:text-indigo-600 rounded-md;
+	}
+>>>>>>> 594d9e1e8c8307021472fc0f95e60a16d8b3a8c2
 }
