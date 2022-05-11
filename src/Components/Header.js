@@ -15,7 +15,9 @@ const Header = () => {
 					development.
 				</p>
 				<div class="self-start flex flex-col space-y-2 lg:space-y-4">
-					<button class="mt-5 lg:text-xl lg:mt-20 w-40">Learn More</button>
+					<a href="#Skills">
+						<button class="mt-5 lg:text-xl lg:mt-20 w-40">Learn More</button>
+					</a>
 				</div>
 			</div>
 		</div>

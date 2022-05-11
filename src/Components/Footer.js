@@ -13,7 +13,7 @@ import React from "react";
 const Footer = () => {
 	return (
 		<Box
-			bgcolor="cadetblue"
+			bgcolor="black"
 			sx={{
 				width: "100%",
 				display: "flex",
@@ -24,6 +24,7 @@ const Footer = () => {
 				height: 100,
 				borderTopLeftRadius: 50,
 				borderTopRightRadius: 50,
+				borderTop: 1,
 			}}
 		>
 			<Typography variant="h5" borderBottom={2}>
