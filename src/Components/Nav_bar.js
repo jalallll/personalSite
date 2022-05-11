@@ -1,6 +1,6 @@
 import React from "react";
 
-const pageNames = ["Home", "Skills", "Projects", "Contact", "Resume"];
+const pageNames = ["Home", "Skills", "Projects"];
 
 const Nav_bar = () => {
 	return (
