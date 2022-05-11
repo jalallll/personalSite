@@ -13,8 +13,8 @@ function App() {
 			<Nav_bar />
 			<div class="bg-black h-auto">
 				<Header />
-				<Projects />
 				<Skills />
+				<Projects />
 			</div>
 		</div>
 	);

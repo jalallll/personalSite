@@ -47,40 +47,49 @@ const skill_list = {
 
 const Skills = () => {
 	return (
-		<div id="Skills" class="w-auto h-auto inline-block">
-			<Container>
-				<Stack
-					direction="column"
-					spacing={0}
-					alignItems="center"
-					divider={<Divider orientation="horizontal" flexItem />}
-					sx={{ paddingTop: 0, display: "flex", flexWrap: "wrap" }}
-				>
-					<Typography variant="h3">Skills</Typography>
-					<Box
+		<Container>
+			<div id="Skills" class=" w-auto h-auto inline-block">
+				<div>
+					<Stack
+						direction="column"
+						spacing={0}
+						alignItems="center"
+						divider={<Divider orientation="horizontal" flexItem />}
 						sx={{
-							marginY: 0,
+							paddingTop: 0,
 							display: "flex",
-
-							gap: 5,
-							flexDirection: { xs: "column", md: "row" },
+							flexWrap: "wrap",
+							paddingBottom: 10,
 						}}
 					>
-						{Object.keys(skill_list).map((category) => (
-							<Stack
-								direction="column"
-								spacing={2}
-								sx={{ alignItems: "center" }}
-								flex={1}
-							>
-								<Typography variant="h4">{category}</Typography>
-								<Card items={skill_list[category]} />
-							</Stack>
-						))}
-					</Box>
-				</Stack>
-			</Container>
-		</div>
+						<h1 class="text-3xl sm:text-3xl lg:text-5xl border-b-2 mx-10">
+							Skills
+						</h1>
+						<Box
+							sx={{
+								marginY: 10,
+								display: "flex",
+
+								gap: 5,
+								flexDirection: { xs: "column", md: "row" },
+							}}
+						>
+							{Object.keys(skill_list).map((category) => (
+								<Stack
+									direction="column"
+									spacing={2}
+									sx={{ alignItems: "center" }}
+									flex={1}
+								>
+									<Typography variant="h4">{category}</Typography>
+									<Card items={skill_list[category]} />
+								</Stack>
+							))}
+						</Box>
+					</Stack>
+				</div>
+			</div>
+		</Container>
 	);
 };
 
