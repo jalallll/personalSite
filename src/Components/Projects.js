@@ -78,12 +78,14 @@ const Projects = () => {
 	return (
 		<div
 			id="Projects"
-			class="w-screen h-screen flex flex-col flex-wrap items-center justify-center space-y-10 "
+			class="w-screen h-screen  flex-col flex-wrap inline-block items-center justify-center space-y-10 "
 		>
 			<h1 class="text-2xl sm:text-3xl lg:text-5xl border-b-2">Projects</h1>
-			{projects.map((project) => (
-				<ProjectCard project={project} />
-			))}
+			<div class="w-full h-auto flex flex-wrap justify-start items-start">
+				{projects.map((project) => (
+					<ProjectCard project={project} />
+				))}
+			</div>
 		</div>
 	);
 };

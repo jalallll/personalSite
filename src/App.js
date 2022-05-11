@@ -11,7 +11,7 @@ function App() {
 	return (
 		<div>
 			<Nav_bar />
-			<div class="bg-black">
+			<div class="bg-black h-auto">
 				<Header />
 				<Projects />
 			</div>
