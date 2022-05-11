@@ -1,3 +1,4 @@
+import { Container } from "@mui/material";
 import React from "react";
 import { DiGithubBadge } from "react-icons/di";
 
@@ -55,7 +56,7 @@ const projects = [
 const ProjectCard = (props) => {
 	return (
 		<div>
-			<div class="w-80 h-auto bg-slate-900 rounded-lg flex flex-col border-2">
+			<div class="m-4 w-80 h-auto bg-slate-900 rounded-lg flex flex-col border-2">
 				<div class="w-full h-10 bg-slate-500 flex justify-between items-center px-4 rounded-tr-lg rounded-tl-lg border-b-2">
 					<h1>{props.project.title}</h1>
 					<a href={props.project.link}>
@@ -76,17 +77,20 @@ const ProjectCard = (props) => {
 
 const Projects = () => {
 	return (
-		<div
-			id="Projects"
-			class="w-screen h-screen  flex-col flex-wrap inline-block items-center justify-center space-y-10 "
-		>
-			<h1 class="text-2xl sm:text-3xl lg:text-5xl border-b-2">Projects</h1>
-			<div class="w-full h-auto flex flex-wrap justify-start items-start">
-				{projects.map((project) => (
-					<ProjectCard project={project} />
-				))}
+		<Container>
+			<div id="Projects" class="w-auto h-auto inline-block  ">
+				<div class="flex flex-col flex-wrap items-center justify-center space-y-10 ">
+					<h1 class="text-2xl sm:text-3xl lg:text-5xl border-b-2 mx-10">
+						Projects
+					</h1>
+					<div class="w-full h-auto flex flex-wrap justify-around items-start">
+						{projects.map((project) => (
+							<ProjectCard project={project} />
+						))}
+					</div>
+				</div>
 			</div>
-		</div>
+		</Container>
 	);
 };
 

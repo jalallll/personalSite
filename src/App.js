@@ -14,6 +14,7 @@ function App() {
 			<div class="bg-black h-auto">
 				<Header />
 				<Projects />
+				<Skills />
 			</div>
 		</div>
 	);

@@ -47,7 +47,7 @@ const skill_list = {
 
 const Skills = () => {
 	return (
-		<div id="Skills" class="w-screen h-screen">
+		<div id="Skills" class="w-auto h-auto inline-block">
 			<Container>
 				<Stack
 					direction="column"

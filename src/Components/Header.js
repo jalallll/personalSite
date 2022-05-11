@@ -4,7 +4,7 @@ const Header = () => {
 	return (
 		<div
 			id="Home"
-			class="w-screen h-screen flex flex-row justify-center items-center"
+			class="w-auto h-screen flex flex-row justify-center items-center"
 		>
 			<img src={bitmoji} class="w-40 h-40" />
 			<div class=" flex flex-col items-start px-5 space-y-2 mt-40">
