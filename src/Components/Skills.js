@@ -47,7 +47,7 @@ const skill_list = {
 
 const Skills = () => {
 	return (
-		<div class="w-screen h-screen">
+		<div id="Skills" class="w-screen h-screen">
 			<Container>
 				<Stack
 					direction="column"

@@ -2,7 +2,10 @@ import React from "react";
 const bitmoji = require("../assets/bitmoji.png");
 const Header = () => {
 	return (
-		<div class="w-screen h-screen flex flex-row justify-center items-center">
+		<div
+			id="Home"
+			class="w-screen h-screen flex flex-row justify-center items-center"
+		>
 			<img src={bitmoji} class="w-40 h-40" />
 			<div class=" flex flex-col items-start px-5 space-y-2 mt-40">
 				<h1 class="text-2xl sm:text-3xl lg:text-5xl">Hey, I'm Jalal</h1>

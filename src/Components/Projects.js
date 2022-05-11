@@ -1,4 +1,5 @@
 import React from "react";
+import { DiGithubBadge } from "react-icons/di";
 
 const projects = [
 	{
@@ -26,7 +27,7 @@ const projects = [
 		link: "https://github.com/jalallll/PyChat",
 	},
 	{
-		title: "Reliable Data Transport Implementation",
+		title: "Reliable Data Transport",
 		tools: "Python Sockets",
 		description:
 			"Used UDP sockets to implement Reliable Data Transfer (RDT) 3.0 protocol to develop a client-server application to allow multi-client messaging.",
@@ -51,13 +52,38 @@ const projects = [
 	},
 ];
 
+const ProjectCard = (props) => {
+	return (
+		<div>
+			<div class="w-80 h-auto bg-slate-900 rounded-lg flex flex-col border-2">
+				<div class="w-full h-10 bg-slate-500 flex justify-between items-center px-4 rounded-tr-lg rounded-tl-lg border-b-2">
+					<h1>{props.project.title}</h1>
+					<a href={props.project.link}>
+						<DiGithubBadge size="2.5em" />
+					</a>
+				</div>
+				<img class="w-full h-52" src={props.project.image} />
+				<div class="w-full h-10 bg-slate-500 flex justify-between items-center px-4 border-b-2 border-t-2">
+					<h1 class="">{props.project.tools}</h1>
+				</div>
+				<div class="w-full h-auto bg-slate-500 flex justify-between items-center py-2 px-4 rounded-br-lg rounded-bl-lg ">
+					<h1 class="">{props.project.description}</h1>
+				</div>
+			</div>
+		</div>
+	);
+};
+
 const Projects = () => {
 	return (
-		<div class="w-screen h-screen flex flex-col items-center justify-center">
-			<h1>Projects</h1>
-			<div>
-				<div class="w-60 h-60 bg-slate-900 rounded-lg"></div>
-			</div>
+		<div
+			id="Projects"
+			class="w-screen h-screen flex flex-col flex-wrap items-center justify-center space-y-10 "
+		>
+			<h1 class="text-2xl sm:text-3xl lg:text-5xl border-b-2">Projects</h1>
+			{projects.map((project) => (
+				<ProjectCard project={project} />
+			))}
 		</div>
 	);
 };

@@ -10,7 +10,7 @@ const Nav_bar = () => {
 				<ul class="flex justify-items-end ">
 					{pageNames.map((page) => (
 						<li class="px-1 sm:px-2 sm:text-2xl lg:mx-4 text-white cursor-pointer hover:border-b-2">
-							<a href={`/${page}`}>{page}</a>
+							<a href={`#${page}`}>{page}</a>
 						</li>
 					))}
 				</ul>
