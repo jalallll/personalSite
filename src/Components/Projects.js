@@ -59,7 +59,7 @@ const ProjectCard = (props) => {
 			<div class="m-4 w-80 h-auto bg-slate-900 rounded-lg flex flex-col border-2">
 				<div class="w-full h-10 bg-slate-500 flex justify-between items-center px-4 rounded-tr-lg rounded-tl-lg border-b-2">
 					<h1>{props.project.title}</h1>
-					<a href={props.project.link}>
+					<a href={props.project.link} target="_blank">
 						<DiGithubBadge size="2.5em" />
 					</a>
 				</div>
